@@ -664,20 +664,21 @@
             <p style="text-align: justify;"> Based in <b>Manhattan, New York,</b> I'm a recent graduate of <b>Columbia University</b>, where I completed my Master of Science in Applied Analytics.
                I also have a foundation in Computer Science Engineering from the Maharashtra Institute of Technology, combining strong technical skills with analytical thinking to solve real-world challenges.
               </p>
-            <p style="text-align: justify;">
+            <!-- <p style="text-align: justify;">
               I specialize in leveraging advanced analytics and machine learning techniques to derive insights from complex data.
-            </p>
+            </p> -->
             <p style="text-align: justify;">
               Over the past few years, I've explored everything from machine learning and data visualization
                to building dashboards and working with cross-functional teams. I've interned at research centers, startups and investment banking firms,
                 worked on projects that blend tech with real-world impact, and genuinely enjoy turning messy data into meaningful insights. 
-                Outside of work, you'll probably find me digging into new AI tools, or exploring the city one coffee shop at a time.
             </p>
             <p>
+              Outside of work, you'll probably find me digging into new AI tools, or exploring the city one coffee shop at a time.
+
             </p>
           </div>
           <div class="section-link">
-            <a href="https://docs.google.com/document/d/17sw2Z7-J8GMkM8G_rBMDj5HXVdMJOz4xdJ8hp1DeRQM/edit?usp=sharing"
+            <a href="https://docs.google.com/document/d/1qDRRpi9V1q_rWZoWfXzb4G_2CkY3Btk4RAJaU3kgeLk/edit?usp=sharing"
             class="link-btn">Download My Resume</a>
           </div>
         </div>
@@ -699,38 +700,30 @@
         <div class="project-container">
           <div class="project scroll-in">
             <div class="project-image">
-              <img src="./static/images/projects/Height.png" width="720" height="340" alt="Trainella yoga website">
+              <img src="./static/images/projects/Mna_Project.png" width="720" height="340" alt="Predicting M&A Likelihood for Investment Banking">
             </div>
             <div class="project-content-container">
               <div class="project-content">
                 <h3 class="project-title">
                   
-                  <a href="projects" target="_blank" rel="noopener"> Human Height Estimation from 2D Uncalibrated Images
+                  <a href="projects" target="_blank" rel="noopener"> 
                      </a>
                 </h3>
-                <div class="project-description">
-                  <p style="text-align: justify;">I built this project during my undergraduate degree, by webscraping celebrity data and images I was able to
-                    build a strong dataset to support the project. Developed an innovative algorithm to accurately estimate human height from 2D uncalibrated 
-                    images, achieving a precision error margin of ±1.9cm. 
-                    </p>
-                  <!-- <p>
-                    One Sunday in June, I attended a free yoga class that I saw online. After the class, I got to
-                    talking
-                    with the instructor and, when I mentioned that I was a web developer, she was like "What a
-                    coincidence, I've been meaning to develop a website for my yoga classes."
-                  </p>
-                  <p>
-                    Never one to look Serendipity in the mouth, I was like "Yeah sure I can do that". The catch was: she
-                    wanted a WordPress site and I'd never actually built a WordPress site from scratch before.
-                  </p>
-                  <p>
-                    After a lot of research and bumbling and mistaking wordpress.com for wordpress.org, I finally
-                    managed
-                    to set up the site with a WordPress theme that I tweaked with about 500 lines of additional CSS to
-                    create a webpage we were both happy with.
-                  </p> -->
+                <p class="project-description">
+                  As part of a capstone with MarshBerry - an investment banking firm, I collaborated with the Analytics team to improve their deal sourcing process by predicting the likelihood of company mergers and acquisitions (M&A) using employee benefit data.
+                </p>
+                
+                <ul class="project-highlights">
+                  <li><b>Problem:</b> Manual review of 50,000+ company records over 11 years made identifying viable acquisition targets time-consuming and inefficient.</li>
+                  <li><b>Approach:</b> Built a binary classification model using BERT for text embeddings and SVM for prediction, addressing class imbalance with SMOTE and undersampling.</li>
+                  <li><b>Data:</b> Used structured and unstructured financial data including employee benefit disclosures and macroeconomic indicators.</li>
+                  <li><b>Outcome:</b> Achieved a 72% F1 score, improved minority class prediction by 49%, and reduced SQL query times by 43%. Also built Tableau dashboards to uncover trends explaining 35% of historical M&A activity.</li>
+                </ul>
                 </div>
                 <ul class="project-tags" title="Technologies used">
+                  <li class="tag">Python</li>
+                  <li class="tag">Tableau</li>
+                  <li class="tag">SQL</li>
                   <li class="tag">Python</li>
                 </ul>
                 <div class="project-links">
@@ -741,62 +734,59 @@
           </div>
           <div class="project scroll-in">
             <div class="project-image">
-              <img src="./static/images/projects/Address.png" width="720" height="340"
-                alt="UNILAG Consult Cybercamp Website">
+              <img src="./static/images/projects/entity_linking.png" width="720" height="340"
+                alt="Entity Linking of Unstructured Addresses">
             </div>
             <div class="project-content-container">
               <div class="project-content">
-                <h3 class="project-title">
-                  <a href="projects" target="_blank" rel="noopener">
-                    Indian Address Parsing Using Bi-LSTM Networks
-                  </a>
-                </h3>
-                <div class="project-description">
-                  <p style="text-align: justify;">
-                    Indian addresses do not have a standardized way of being written, which creates possibility of duplication.
-                    This project was aimed to normalize the addresses and create a parsing system that will help in identifying 
-                    duplicate addresses in a database.
-                  </p>
-                  <!-- <p>
-                    The inspiration behind the design was something along the lines of: provide as much information as
-                    possible and be easy to navigate so we stuck to a basic layout with minimal animations.
-                  </p> -->
-                </div>
+                <h3 class="project-title"></h3>
+                <p class="project-description">
+                  Built a scalable NLP system to parse and normalize over 20,000 unstructured Indian addresses, reducing storage costs and improving consistency in address-linked databases.
+                </p>
+                <ul class="project-highlights">
+                  <li><b>Problem:</b> Redundant and inconsistent address formats led to excessive database storage use and poor indexing performance.</li>
+                  <li><b>Approach:</b> Trained a Bi-LSTM model to identify and tag key entities (e.g., locality, district, state), and normalized them into a consistent schema using Flask APIs for deployment.</li>
+                  <li><b>Data:</b> Scraped address data from public sources and OpenStreetMap, accounting for linguistic and structural diversity across Indian regions.</li>
+                  <li><b>Outcome:</b> Reduced address record storage size by 38% and improved query performance by 45%, while achieving a 92% entity extraction accuracy rate.</li>
+                </ul>
                 <ul class="project-tags">
                   <li class="tag">Python</li>
                   <li class="tag">Natural Language Processing</li>
                 </ul>
                 <div class="project-links">
-                  <a href="projects" target="_blank" rel="noopener"
-                    class="link-btn">Read More</a>
+                  <a href="projects" target="_blank" rel="noopener" class="link-btn">Read More</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="project scroll-in">
             <div class="project-image">
-              <img src="./static/images/projects/waste.jpeg" width="720" height="340"
-                alt="">
+              <img src="./static/images/projects/ev.png" width="720" height="340"
+                alt="EV Charging Infrastructure & Sales Analysis">
             </div>
             <div class="project-content-container">
               <div class="project-content">
                 <h3 class="project-title">
-                  Efficient Management of Waste
+                  <a href="projects" target="_blank" rel="noopener">
+                  </a>
                 </h3>
-                <div class="project-description">
-                  <p style="text-align: justify;">
-                    Living in Pune, a metropolitan city in India, I noticed that the Waste Management system
-                    was not so efficient. After collecting data from the municipal corporation of the city, I 
-                    was able to present a more efficient waste collection and disposing system that reduces the 
-                    emissions from the freightage.
-                  </p>
-                </div>
+                <p class="project-description">
+                  Conducted an end-to-end analysis of the U.S. electric vehicle (EV) ecosystem by combining geospatial charging station data and customer sentiment from survey responses to identify adoption barriers and infrastructure gaps.
+                </p>
+              
+                <ul class="project-highlights">
+                  <li><b>Problem:</b> Lack of accessible charging infrastructure was cited as a primary barrier to EV adoption, yet existing data was fragmented and unstructured.</li>
+                  <li><b>Approach:</b> Scraped data for 60,000+ charging stations, visualized them using interactive maps in Tableau, and performed sentiment analysis on user survey responses using spaCy NLP pipeline.</li>
+                  <li><b>Data:</b> Combined structured geolocation datasets with unstructured textual survey responses to draw holistic insights.</li>
+                  <li><b>Outcome:</b> Identified "infrastructure inaccessibility" as a recurring concern, influencing a dashboard that explained 70% of regional sales variance and informed deployment strategy suggestions.</li>
+                </ul>
                 <ul class="project-tags">
-                  <li class="tag">Java</li>
-                  <li class="tag">SQL</li>
+                  <li class="tag">Microsoft PowerBI</li>
+                  <li class="tag">Python</li>
                 </ul>
                 <div class="project-links">
-                  <a href="projects" target="_blank" rel="noopener" class="link-btn">Read More</a>
+                  <a href="projects" target="_blank" rel="noopener"
+                    class="link-btn">Read More</a>
                 </div>
               </div>
             </div>
